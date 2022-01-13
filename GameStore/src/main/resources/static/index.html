@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог игр</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+
+<h1>Каталог игр</h1>
+<table id="games_list">
+
+</table>
+
+<br>
+
+<div id="inscription" class="hidden"></div>
+
+<br>
+
+<form action="#">
+    <input id="game_name" placeholder="Название игры">
+    <input id="game_price" placeholder="Цена">
+    <input id="game_description" placeholder="Описание">
+    <input id="game_release_date" placeholder="Дата выхода">
+    <input id="game_rating" placeholder="Оценка игры">
+    <button onclick="createGame()">Создать игру</button>
+</form>
+
+<br>
+
+<input id="search_field"  placeholder="Название игры">
+<button onclick="searchByName()">Поиск</button>
+<button onclick="resetSearch()">Сбросить</button>
+
+<script src="scripts/index.js"></script>
+
+</body>
+</html>
